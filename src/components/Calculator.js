@@ -1,29 +1,6 @@
 import React, { useState } from 'react';
-import PropTypes from 'prop-types';
 import calculate from '../logic/calculate';
-
-const operatorSigns = ['÷', 'x', '-', '+', '='];
-
-const Button = ({ label, handleClick }) => {
-  const isOperator = operatorSigns.includes(label);
-  const buttonClass = isOperator ? 'operatorButton' : '';
-  const buttonWidth = label === '0' ? 'doubleWidthButton' : '';
-
-  return (
-    <button
-      className={`${buttonClass} ${buttonWidth}`}
-      type="button"
-      onClick={() => handleClick(label)}
-    >
-      {label}
-    </button>
-  );
-};
-
-Button.propTypes = {
-  label: PropTypes.string.isRequired,
-  handleClick: PropTypes.func.isRequired,
-};
+import Button from './Buttons';
 
 const Calculator = () => {
   const [display, setDisplay] = useState({

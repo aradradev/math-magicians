@@ -67,3 +67,27 @@ button:hover {
 .doubleWidthButton {
   grid-column: span 2;
 }
+
+.quote {
+  margin: 1rem auto;
+  font-size: 1.3rem;
+  position: relative;
+}
+
+.quote::before {
+  content: '"';
+  position: absolute;
+  top: -0.5rem;
+  left: -1rem;
+  font-size: 1.5rem;
+  color: #000;
+}
+
+.quote::after {
+  content: '"';
+  position: absolute;
+  bottom: -0.5rem;
+  right: -1rem;
+  font-size: 1.5rem;
+  color: #000;
+}
