@@ -25,7 +25,7 @@ const Quote = () => {
         const data = await response.json();
         // Check the structure of the data object
         if (data && data[0] && data[0].quote) {
-          setQuote(data[0].quote);
+          setQuote(data);
         } else {
           throw new Error('Invalid response data');
         }
@@ -53,7 +53,15 @@ const Quote = () => {
 
   return (
     <div className="quote">
-      <p>{quote}</p>
+      {quote.map((q) => {
+        const { quote, author } = q;
+        return (
+          <div key={q.id}>
+            <p>{quote}</p>
+            <h4>{author}</h4>
+          </div>
+        );
+      })}
     </div>
   );
 };
