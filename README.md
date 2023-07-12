@@ -58,7 +58,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-[click here](https://math-magicians-abdoul.netlify.app/)
+[click here](https://math-magicians-v1.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
