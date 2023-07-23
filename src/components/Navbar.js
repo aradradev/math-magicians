@@ -6,17 +6,17 @@ const Navbar = () => (
   <nav className="navItem">
     <ul className="ulElement">
       <li>
-        <Link style={{ textDecoration: 'none', color: 'red' }} to="/">
+        <Link style={{ textDecoration: 'none', color: 'white' }} to="/">
           Home
         </Link>
       </li>
       <li>
-        <Link style={{ textDecoration: 'none', color: 'red' }} to="/calculator">
+        <Link style={{ textDecoration: 'none', color: 'white' }} to="/calculator">
           Calculator
         </Link>
       </li>
       <li>
-        <Link style={{ textDecoration: 'none', color: 'red' }} to="/quote">
+        <Link style={{ textDecoration: 'none', color: 'white' }} to="/quote">
           Quote
         </Link>
       </li>

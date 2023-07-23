@@ -19,8 +19,7 @@ body {
     sans-serif;
   font-size: 22px;
   min-height: 100vh;
-  max-width: 1200px;
-  min-width: 90vw;
+  min-width: 100vw;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -31,6 +30,13 @@ body {
   max-width: 500px;
   min-width: 80vw;
   margin: 0 auto;
+}
+
+.homePage {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
 }
 
 .display {

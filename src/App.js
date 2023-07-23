@@ -7,7 +7,7 @@ import Home from './components/Home';
 import Navbar from './components/Navbar';
 
 const App = () => (
-  <>
+  <main className="mainContainer">
     <div className="navigation">
       <Link style={{ textDecoration: 'none' }} to="/">
         Math Magicians
@@ -21,7 +21,7 @@ const App = () => (
         <Route path="/quote" element={<Quote />} />
       </Routes>
     </div>
-  </>
+  </main>
 );
 
 export default App;
